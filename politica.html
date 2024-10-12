@@ -3,14 +3,30 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>D-HelpDesk - Política de Privacidad</title>
+    <title>DAGA-HelpDesk - Política de Privacidad</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        .container {
+            max-width: 1200px;
+        }
+        .card {
+            height: 200px; /* Cuadros más pequeños */
+            overflow-y: auto; /* Barra de desplazamiento si hay más contenido */
+            transition: transform 0.3s ease, box-shadow 0.3s ease; /* Efecto de transición */
+            padding: 12px; /* Padding reducido */
+        }
+        .card:hover {
+            transform: scale(1.05); /* Efecto de aumento al pasar el mouse */
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); /* Sombra al pasar el mouse */
+        }
+    </style>
 </head>
-<body class="bg-gray-100">
+<body class="bg-gray-100 font-inter">
     <!-- Menú de navegación -->
-    <header class="bg-gray-800 fixed w-full z-10">
+    <header class="bg-gray-800 fixed w-full z-10 shadow-md">
         <div class="container mx-auto p-4 flex justify-between items-center">
-            <h1 class="text-3xl font-bold text-white">D-HelpDesk</h1>
+            <h1 class="text-3xl font-bold text-white">DAGA-HelpDesk</h1>
             <nav>
                 <ul class="flex space-x-6 text-white">
                     <li><a href="index.html" class="hover:text-blue-300">Inicio</a></li>
@@ -23,40 +39,61 @@
         </div>
     </header>
 
-    <!-- Contenido de la Política de Privacidad -->
-    <section class="mt-16">
-        <div class="container mx-auto text-center py-32">
-            <h2 class="text-4xl font-bold text-gray-900">Política de Privacidad</h2>
-            <p class="text-xl mt-4 text-gray-700">Tu privacidad es importante para nosotros. Lee nuestra política para saber cómo manejamos tu información.</p>
-        </div>
+    <!-- Contenido principal -->
+    <section class="pt-32 bg-gradient-to-r from-blue-800 to-cyan-300 text-white text-left h-auto min-h-screen">
+        <div class="container mx-auto px-4 flex flex-col items-center justify-center">
+            <!-- Título de la sección -->
+            <h2 class="text-4xl font-bold text-gray-900 leading-tight mb-12">Política de Privacidad</h2>
 
-        <div class="container mx-auto px-4 py-8">
-            <h3 class="text-2xl font-bold text-gray-800">Recolección de Información</h3>
-            <p class="mt-4 text-gray-600">
-                En D-HelpDesk, recogemos información personal para mejorar nuestros servicios. Esta información puede incluir tu nombre, dirección de correo electrónico y cualquier otro dato que nos proporciones.
-            </p>
+            <!-- Cuadros en 2 filas y 2 columnas -->
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 justify-center">
+                <!-- Sección Recolección de Información -->
+                <div class="bg-gray-700 text-gray-100 shadow-lg rounded-lg mb-8 card w-full max-w-md">
+                    <h3 class="text-2xl font-semibold text-gray-100">Recolección de Información</h3>
+                    <p class="mt-4 text-gray-300">
+                        Recopilamos datos personales como tu nombre, dirección de correo electrónico y otros datos proporcionados para mejorar nuestros servicios y ofrecerte una experiencia personalizada.
+                    </p>
+                </div>
 
-            <h3 class="text-2xl font-bold text-gray-800 mt-8">Uso de la Información</h3>
-            <p class="mt-4 text-gray-600">
-                La información recolectada se utiliza para brindarte una mejor experiencia, personalizar el contenido y mejorar nuestros servicios. Nunca compartiremos tu información con terceros sin tu consentimiento.
-            </p>
+                <!-- Sección Uso de la Información -->
+                <div class="bg-gray-700 text-gray-100 shadow-lg rounded-lg mb-8 card w-full max-w-md">
+                    <h3 class="text-2xl font-semibold text-gray-100">Uso de la Información</h3>
+                    <p class="mt-4 text-gray-300">
+                        La información que recopilamos se utiliza exclusivamente para personalizar los servicios que ofrecemos, mejorar la experiencia del usuario, y no será compartida con terceros sin tu consentimiento explícito.
+                    </p>
+                </div>
 
-            <h3 class="text-2xl font-bold text-gray-800 mt-8">Seguridad</h3>
-            <p class="mt-4 text-gray-600">
-                Nos tomamos muy en serio la seguridad de tu información. Utilizamos medidas de protección para garantizar que tu información esté segura y solo accesible a personas autorizadas.
-            </p>
+                <!-- Sección Seguridad -->
+                <div class="bg-gray-700 text-gray-100 shadow-lg rounded-lg mb-8 card w-full max-w-md">
+                    <h3 class="text-2xl font-semibold text-gray-100">Seguridad</h3>
+                    <p class="mt-4 text-gray-300">
+                        Tomamos medidas estrictas para proteger tu información. Implementamos tecnologías de encriptación y controles de acceso para salvaguardar tu privacidad.
+                    </p>
+                </div>
 
-            <h3 class="text-2xl font-bold text-gray-800 mt-8">Cambios a esta Política</h3>
-            <p class="mt-4 text-gray-600">
-                Nos reservamos el derecho de modificar esta política en cualquier momento. Si se realizan cambios importantes, te lo notificaremos por correo electrónico o mediante un aviso en nuestro sitio web.
-            </p>
+                <!-- Sección Cambios a la Política -->
+                <div class="bg-gray-700 text-gray-100 shadow-lg rounded-lg mb-8 card w-full max-w-md">
+                    <h3 class="text-2xl font-semibold text-gray-100">Cambios a esta Política</h3>
+                    <p class="mt-4 text-gray-300">
+                        Nos reservamos el derecho de actualizar o modificar esta política en cualquier momento. Te informaremos de cualquier cambio importante por correo electrónico o a través de un aviso en nuestro sitio web.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Botón de WhatsApp -->
+            <div class="text-center mt-8">
+                <a href="https://wa.me/51987654321?text=Hola,%20necesito%20ayuda%20con%20DAGA-HelpDesk" 
+                   class="inline-block bg-green-500 text-white font-bold py-3 px-6 rounded-lg hover:bg-green-600 transition duration-300 ease-in-out transform hover:scale-105">
+                   Contactar por WhatsApp
+                </a>
+            </div>
         </div>
     </section>
 
     <!-- Pie de página -->
-    <footer class="bg-gray-800 text-white py-6 mt-8">
+    <footer class="bg-gray-800 text-white py-6 mt-12">
         <div class="container mx-auto text-center">
-            <p>© 2024 D-HelpDesk. Todos los derechos reservados.</p>
+            <p>© 2024 DAGA-HelpDesk. Todos los derechos reservados.</p>
         </div>
     </footer>
 </body>

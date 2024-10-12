@@ -5,8 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DAGA-HelpDesk - Inicio</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
 </head>
-<body class="bg-gray-100">
+<body class="bg-gray-100 font-inter">
     <!-- Menú de navegación -->
     <header class="bg-gray-800 fixed w-full z-10">
         <div class="container mx-auto p-4 flex justify-between items-center">
@@ -24,23 +25,30 @@
     </header>
 
     <!-- Contenido principal -->
-    <section class="mt-16">
-        <div class="bg-blue-500 text-white text-center py-32">
-            <h2 class="text-4xl font-bold">Bienvenido a DAGA-HelpDesk</h2>
-            <p class="text-xl mt-4">Ofrecemos las mejores soluciones de TI.</p>
+    <section class="pt-32 bg-gradient-to-r from-blue-800 to-cyan-300 text-white text-center h-screen">
+        <div class="container mx-auto flex flex-col md:flex-row items-center justify-center space-y-6 md:space-y-0 md:space-x-32 h-full">
+            <div class="mt-8 mb-8">
+                <h2 class="text-4xl font-bold text-gray-900 leading-tight">Bienvenido a DAGA-HelpDesk</h2>
+                <p class="text-xl mt-4 text-gray-700 leading-relaxed">Ofrecemos las mejores soluciones de TI.</p>
 
-            <!-- Botón de WhatsApp -->
-            <div class="mt-8">
-                <a href="https://wa.me/51987654321?text=Hola,%20necesito%20ayuda%20con%20DAGA-HelpDesk" 
-                   class="inline-block bg-green-500 text-white font-bold py-3 px-6 rounded-lg hover:bg-green-600">
-                   Contactar por WhatsApp
-                </a>
+                <!-- Botón de WhatsApp -->
+                <div class="mt-8">
+                    <a href="https://wa.me/51987654321?text=Hola,%20necesito%20ayuda%20con%20DAGA-HelpDesk" 
+                       class="inline-block bg-green-500 text-white font-bold py-3 px-6 rounded-lg hover:bg-green-600">
+                       Contactar por WhatsApp
+                    </a>
+                </div>
+            </div>
+
+            <!-- Imagen de persona programando -->
+            <div class="mt-8 mb-8">
+                <img src="./img/index.png" alt="Persona programando" class="w-48 h-auto rounded-lg">
             </div>
         </div>
     </section>
 
     <!-- Pie de página -->
-    <footer class="bg-gray-800 text-white py-6 mt-8">
+    <footer class="bg-gray-800 text-white py-6">
         <div class="container mx-auto text-center">
             <p>© 2024 DAGA-HelpDesk. Todos los derechos reservados</p>
         </div>
